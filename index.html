@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Redwood Furniture SA – Affordable Furniture, Gauteng | Cash on Delivery</title>
+<meta name="description" content="Quality furniture delivered same-day across Gauteng. L-shape couches from R1650. Cash on Delivery. Based in Brakpan. Order on WhatsApp now!"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --red: #C8281E;
+    --red-dark: #9E1F18;
+    --red-light: #E8342A;
+    --wood: #8B4513;
+    --wood-light: #A0522D;
+    --gold: #D4A017;
+    --dark: #1A1A1A;
+    --charcoal: #2D2D2D;
+    --mid: #555;
+    --light: #F7F4F0;
+    --white: #FFFFFF;
+    --green-wa: #25D366;
+    --green-wa-dark: #1DA851;
+    --radius: 12px;
+    --shadow: 0 4px 24px rgba(0,0,0,0.12);
+    --shadow-lg: 0 8px 40px rgba(0,0,0,0.18);
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: var(--light);
+    color: var(--dark);
+    overflow-x: hidden;
+    padding-bottom: 80px;
+  }
+
+  /* ===== HEADER ===== */
+  header {
+    background: var(--dark);
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+  }
+  .logo-icon {
+    width: 36px;
+    height: 36px;
+    background: var(--red);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 0;
+    flex-shrink: 0;
+  }
+  .logo-text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 1;
+  }
+  .logo-sub {
+    font-family: 'Nunito', sans-serif;
+    font-size: 9px;
+    color: var(--gold);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .header-wa {
+    background: var(--green-wa);
+    color: white;
+    padding: 8px 14px;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 12px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+  }
+  .header-wa svg { width:15px; height:15px; flex-shrink:0; }
+
+  /* ===== TOP BANNER ===== */
+  .top-banner {
+    background: var(--red);
+    color: white;
+    text-align: center;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+  }
+  .top-banner span { color: var(--gold); }
+
+  /* ===== HERO ===== */
+  .hero {
+    background: var(--dark);
+    padding: 36px 16px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 240px; height: 240px;
+    background: var(--red);
+    border-radius: 50%;
+    opacity: 0.08;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -80px; left: -80px;
+    width: 300px; height: 300px;
+    background: var(--wood);
+    border-radius: 50%;
+    opacity: 0.06;
+  }
+  .hero-badge {
+    display: inline-block;
+    background: var(--red);
+    color: white;
+    padding: 5px 14px;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .hero h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(44px, 11vw, 72px);
+    color: white;
+    line-height: 1;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+  }
+  .hero h1 span { color: var(--red); }
+  .hero-sub {
+    color: rgba(255,255,255,0.75);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-price {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: var(--radius);
+    padding: 14px 20px;
+    margin-bottom: 28px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+  .hero-price .from { font-size: 11px; color: rgba(255,255,255,0.5); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+  .hero-price .amount { font-family: 'Bebas Neue', sans-serif; font-size: 52px; color: white; line-height: 1; }
+  .hero-price .amount span { color: var(--gold); }
+  .hero-price .note { font-size: 11px; color: var(--green-wa); font-weight: 700; }
+  .hero-ctas { display: flex; flex-direction: column; gap: 12px; max-width: 340px; margin: 0 auto; position: relative; z-index: 1; }
+  .btn-wa {
+    background: var(--green-wa);
+    color: white;
+    padding: 18px 24px;
+    border-radius: 50px;
+    font-weight: 900;
+    font-size: 17px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.35);
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .btn-wa:active { transform: scale(0.97); }
+  .btn-wa svg { width:22px; height:22px; flex-shrink:0; }
+  .btn-secondary {
+    background: transparent;
+    color: white;
+    padding: 16px 24px;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 15px;
+    text-decoration: none;
+    border: 2px solid rgba(255,255,255,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .btn-secondary:active { background: rgba(255,255,255,0.08); }
+  .hero-trust {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: rgba(255,255,255,0.6);
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .trust-item .dot { width: 6px; height: 6px; background: var(--green-wa); border-radius: 50%; flex-shrink: 0; }
+
+  /* ===== SECTIONS ===== */
+  section { padding: 40px 16px; }
+  .section-label {
+    font-size: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--red);
+    margin-bottom: 6px;
+  }
+  .section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(32px, 8vw, 48px);
+    color: var(--dark);
+    line-height: 1.05;
+    margin-bottom: 24px;
+  }
+  .section-title span { color: var(--red); }
+
+  /* ===== SOCIAL PROOF BAR ===== */
+  .proof-bar {
+    background: var(--charcoal);
+    padding: 16px;
+    overflow: hidden;
+  }
+  .proof-scroll {
+    display: flex;
+    gap: 24px;
+    animation: scrollLeft 20s linear infinite;
+    width: max-content;
+  }
+  @keyframes scrollLeft { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+  .proof-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    color: rgba(255,255,255,0.85);
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .proof-item .icon { font-size: 16px; }
+  .proof-sep { color: var(--red); font-size: 18px; }
+
+  /* ===== TESTIMONIALS ===== */
+  .testimonials { background: white; }
+  .wa-bubble {
+    background: #E8F5E9;
+    border-radius: 16px 16px 16px 4px;
+    padding: 14px 16px;
+    margin-bottom: 14px;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .wa-bubble::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -8px;
+    width: 0; height: 0;
+    border-top: 10px solid #E8F5E9;
+    border-left: 10px solid transparent;
+  }
+  .wa-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .wa-avatar {
+    width: 34px; height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 14px;
+    color: white;
+    flex-shrink: 0;
+  }
+  .wa-name { font-weight: 800; font-size: 13px; color: var(--dark); }
+  .wa-loc { font-size: 11px; color: var(--mid); font-weight: 600; }
+  .wa-text { font-size: 14px; color: var(--charcoal); line-height: 1.5; font-weight: 600; }
+  .wa-time { font-size: 11px; color: var(--mid); text-align: right; margin-top: 6px; }
+  .stars { color: #F59E0B; font-size: 14px; letter-spacing: 1px; margin-bottom: 4px; }
+
+  /* ===== CATEGORIES ===== */
+  .categories { background: var(--light); }
+  .cat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .cat-card {
+    background: white;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    text-decoration: none;
+    color: var(--dark);
+    display: block;
+    transition: transform 0.15s;
+  }
+  .cat-card:active { transform: scale(0.98); }
+  .cat-img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    background: linear-gradient(135deg, #f0e8e0, #e0d0c0);
+  }
+  .cat-img.sofa { background: linear-gradient(135deg, #3D2B1F, #6B4226); }
+  .cat-img.bed { background: linear-gradient(135deg, #2B3D5F, #1A2A45); }
+  .cat-img.dining { background: linear-gradient(135deg, #3B2B1A, #5C3D22); }
+  .cat-img.kitchen { background: linear-gradient(135deg, #1A3B2B, #2A5C3D); }
+  .cat-body { padding: 12px; }
+  .cat-name { font-weight: 900; font-size: 14px; margin-bottom: 2px; }
+  .cat-from { font-size: 11px; color: var(--mid); font-weight: 600; }
+  .cat-price { font-family: 'Bebas Neue', sans-serif; font-size: 22px; color: var(--red); }
+  .cat-cta {
+    margin-top: 10px;
+    background: var(--red);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+  }
+
+  /* ===== PRODUCTS ===== */
+  .products { background: white; }
+  .prod-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .prod-card {
+    background: var(--light);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    position: relative;
+  }
+  .prod-badge {
+    position: absolute;
+    top: 10px; left: 10px;
+    background: var(--red);
+    color: white;
+    padding: 3px 10px;
+    border-radius: 50px;
+    font-size: 10px;
+    font-weight: 900;
+    z-index: 2;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .prod-badge.hot { background: var(--gold); color: var(--dark); }
+  .prod-img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 44px;
+  }
+  .prod-body { padding: 12px; }
+  .prod-name { font-weight: 800; font-size: 13px; margin-bottom: 4px; line-height: 1.3; }
+  .prod-benefit { font-size: 11px; color: var(--mid); font-weight: 600; margin-bottom: 8px; line-height: 1.4; }
+  .prod-price { font-family: 'Bebas Neue', sans-serif; font-size: 26px; color: var(--red); line-height: 1; margin-bottom: 2px; }
+  .prod-old { font-size: 11px; color: var(--mid); text-decoration: line-through; font-weight: 600; margin-bottom: 10px; }
+  .btn-prod-wa {
+    background: var(--green-wa);
+    color: white;
+    padding: 10px 12px;
+    border-radius: 50px;
+    font-weight: 900;
+    font-size: 12px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  .btn-prod-wa svg { width:14px; height:14px; }
+
+  /* ===== WHY US ===== */
+  .why-us { background: var(--dark); }
+  .why-us .section-title { color: white; }
+  .why-us .section-label { color: var(--gold); }
+  .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .why-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: var(--radius);
+    padding: 20px 16px;
+    text-align: center;
+  }
+  .why-icon { font-size: 32px; margin-bottom: 10px; }
+  .why-title { font-weight: 900; font-size: 14px; color: white; margin-bottom: 6px; }
+  .why-desc { font-size: 12px; color: rgba(255,255,255,0.55); font-weight: 600; line-height: 1.5; }
+
+  /* ===== HOW IT WORKS ===== */
+  .how { background: white; }
+  .steps { display: flex; flex-direction: column; gap: 0; }
+  .step {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    position: relative;
+    padding-bottom: 28px;
+  }
+  .step:last-child { padding-bottom: 0; }
+  .step-line {
+    position: absolute;
+    left: 22px;
+    top: 46px;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--red), transparent);
+  }
+  .step:last-child .step-line { display: none; }
+  .step-num {
+    width: 46px;
+    height: 46px;
+    background: var(--red);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    color: white;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+  }
+  .step-content { padding-top: 6px; }
+  .step-title { font-weight: 900; font-size: 16px; margin-bottom: 4px; }
+  .step-desc { font-size: 13px; color: var(--mid); font-weight: 600; line-height: 1.5; }
+
+  /* ===== URGENCY ===== */
+  .urgency {
+    background: linear-gradient(135deg, var(--red-dark), var(--red));
+    color: white;
+    text-align: center;
+  }
+  .urgency .section-title { color: white; }
+  .urgency .section-label { color: rgba(255,255,255,0.7); }
+  .urgency-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 28px; }
+  .urgency-card {
+    background: rgba(0,0,0,0.2);
+    border-radius: var(--radius);
+    padding: 14px;
+    text-align: center;
+  }
+  .urgency-num { font-family: 'Bebas Neue', sans-serif; font-size: 40px; line-height: 1; color: var(--gold); }
+  .urgency-label { font-size: 11px; font-weight: 800; opacity: 0.85; }
+  .urgency-bar-wrap { background: rgba(0,0,0,0.2); border-radius: 50px; height: 10px; margin: 16px 0 8px; overflow: hidden; }
+  .urgency-bar { height: 100%; background: var(--gold); border-radius: 50px; width: 72%; animation: pulse-bar 2s ease-in-out infinite; }
+  @keyframes pulse-bar { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
+  .urgency-bar-text { font-size: 12px; font-weight: 800; opacity: 0.85; margin-bottom: 24px; }
+
+  /* ===== FINAL CTA ===== */
+  .final-cta { background: var(--light); text-align: center; }
+  .final-cta .section-title { margin-bottom: 8px; }
+  .final-sub { font-size: 14px; color: var(--mid); font-weight: 600; margin-bottom: 28px; max-width: 300px; margin-left: auto; margin-right: auto; }
+  .cod-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: white;
+    border: 2px solid var(--green-wa);
+    border-radius: var(--radius);
+    padding: 12px 20px;
+    margin-top: 20px;
+    font-weight: 900;
+    font-size: 14px;
+    color: var(--dark);
+  }
+  .cod-badge .icon { font-size: 22px; }
+
+  /* ===== FOOTER ===== */
+  footer {
+    background: var(--dark);
+    color: rgba(255,255,255,0.6);
+    padding: 28px 16px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  footer .brand { font-family: 'Bebas Neue', sans-serif; font-size: 24px; color: white; margin-bottom: 4px; }
+  footer .location { color: var(--gold); font-weight: 700; font-size: 13px; margin-bottom: 12px; }
+  footer .links { display: flex; justify-content: center; gap: 20px; margin-bottom: 12px; }
+  footer .links a { color: rgba(255,255,255,0.5); text-decoration: none; font-weight: 700; transition: color 0.15s; }
+  footer .links a:hover { color: white; }
+  footer .copy { font-size: 11px; }
+
+  /* ===== FLOATING WA BUTTON ===== */
+  .float-wa {
+    position: fixed;
+    bottom: 20px;
+    right: 16px;
+    z-index: 999;
+    background: var(--green-wa);
+    color: white;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 24px rgba(37,211,102,0.5);
+    text-decoration: none;
+    animation: float-pulse 3s ease-in-out infinite;
+  }
+  @keyframes float-pulse {
+    0%, 100% { box-shadow: 0 4px 24px rgba(37,211,102,0.5); }
+    50% { box-shadow: 0 4px 40px rgba(37,211,102,0.8); }
+  }
+  .float-wa svg { width: 28px; height: 28px; }
+  .float-wa-label {
+    position: fixed;
+    bottom: 30px;
+    right: 82px;
+    z-index: 999;
+    background: var(--dark);
+    color: white;
+    padding: 7px 14px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 800;
+    white-space: nowrap;
+    box-shadow: var(--shadow);
+    animation: label-appear 0.5s ease 1.5s both;
+  }
+  @keyframes label-appear { from { opacity: 0; transform: translateX(10px); } to { opacity: 1; transform: translateX(0); } }
+  .float-wa-label::after {
+    content: '';
+    position: absolute;
+    top: 50%; right: -8px;
+    transform: translateY(-50%);
+    border: 5px solid transparent;
+    border-left-color: var(--dark);
+  }
+
+  /* ===== STICKY BOTTOM BAR ===== */
+  .sticky-bar {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: white;
+    border-top: 1px solid rgba(0,0,0,0.08);
+    padding: 12px 16px;
+    display: flex;
+    gap: 10px;
+    z-index: 98;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+  }
+  .sticky-call {
+    background: var(--light);
+    color: var(--dark);
+    padding: 14px;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 13px;
+    text-decoration: none;
+    border: 2px solid rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+  .sticky-wa {
+    background: var(--green-wa);
+    color: white;
+    padding: 14px 20px;
+    border-radius: 50px;
+    font-weight: 900;
+    font-size: 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex: 1;
+    box-shadow: 0 2px 12px rgba(37,211,102,0.3);
+  }
+  .sticky-wa svg, .sticky-call svg { width: 18px; height: 18px; flex-shrink: 0; }
+
+  /* ===== DELIVERY PROOF ===== */
+  .delivery-proof { background: #f0f9f0; border-top: 3px solid var(--green-wa); }
+  .delivery-item {
+    background: white;
+    border-radius: var(--radius);
+    padding: 14px;
+    margin-bottom: 14px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .delivery-icon { font-size: 30px; flex-shrink: 0; }
+  .delivery-text .head { font-weight: 900; font-size: 14px; margin-bottom: 3px; }
+  .delivery-text .body { font-size: 12px; color: var(--mid); font-weight: 600; line-height: 1.5; }
+  .delivery-text .time { font-size: 11px; color: var(--green-wa); font-weight: 800; margin-top: 4px; }
+
+  /* ===== PRODUCT PAGE (hidden by default) ===== */
+  .page { display: none; }
+  .page.active { display: block; }
+  .back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--red);
+    font-weight: 800;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 16px;
+    text-decoration: none;
+    background: white;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    width: 100%;
+  }
+  .prod-gallery {
+    width: 100%;
+    aspect-ratio: 4/3;
+    background: linear-gradient(135deg, #3D2B1F, #6B4226);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    position: relative;
+  }
+  .prod-gallery-badge {
+    position: absolute;
+    top: 16px; left: 16px;
+    background: var(--red);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-weight: 900;
+    font-size: 13px;
+  }
+  .prod-detail { padding: 20px 16px; background: white; }
+  .prod-detail-name { font-family: 'Bebas Neue', sans-serif; font-size: 36px; line-height: 1.1; margin-bottom: 8px; }
+  .prod-detail-price { font-family: 'Bebas Neue', sans-serif; font-size: 48px; color: var(--red); line-height: 1; margin-bottom: 4px; }
+  .prod-detail-old { font-size: 14px; color: var(--mid); text-decoration: line-through; font-weight: 700; margin-bottom: 16px; }
+  .prod-scarcity {
+    background: #FEF3CD;
+    border: 1px solid #F59E0B;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 13px;
+    font-weight: 800;
+    color: #92400E;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .prod-benefits { margin-bottom: 20px; }
+  .prod-benefits h3 { font-weight: 900; font-size: 16px; margin-bottom: 12px; }
+  .benefit-row { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; }
+  .benefit-check { color: var(--green-wa); font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+  .benefit-text { font-size: 14px; font-weight: 700; color: var(--charcoal); line-height: 1.4; }
+  .prod-specs { background: var(--light); border-radius: var(--radius); padding: 16px; margin-bottom: 20px; }
+  .prod-specs h3 { font-weight: 900; font-size: 15px; margin-bottom: 12px; }
+  .spec-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.06); font-size: 13px; }
+  .spec-row:last-child { border-bottom: none; }
+  .spec-label { color: var(--mid); font-weight: 700; }
+  .spec-val { font-weight: 900; }
+  .prod-delivery {
+    background: #E8F5E9;
+    border-radius: var(--radius);
+    padding: 16px;
+    margin-bottom: 24px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+  .prod-delivery .icon { font-size: 30px; }
+  .prod-delivery .text .head { font-weight: 900; font-size: 14px; }
+  .prod-delivery .text .body { font-size: 12px; color: var(--mid); font-weight: 600; }
+  .prod-cta-big {
+    background: var(--green-wa);
+    color: white;
+    padding: 20px;
+    border-radius: 50px;
+    font-weight: 900;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 24px rgba(37,211,102,0.4);
+  }
+  .prod-cta-big svg { width: 24px; height: 24px; }
+  .prod-cod-note { text-align: center; font-size: 13px; color: var(--mid); font-weight: 700; }
+  .prod-cod-note span { color: var(--dark); font-weight: 900; }
+  .trust-row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0,0,0,0.06);
+  }
+  .trust-col { text-align: center; }
+  .trust-col .t-icon { font-size: 22px; margin-bottom: 4px; }
+  .trust-col .t-text { font-size: 11px; font-weight: 800; color: var(--mid); }
+</style>
+</head>
+<body>
+
+<!-- ===== HOMEPAGE ===== -->
+<div id="homepage" class="page active">
+
+  <!-- Top Banner -->
+  <div class="top-banner">
+    🚚 <span>FREE DELIVERY</span> across Gauteng · Cash on Delivery Available · WhatsApp Orders Welcome
+  </div>
+
+  <!-- Header -->
+  <header>
+    <a href="#" class="logo" onclick="showPage('homepage')">
+      <div class="logo-icon">R</div>
+      <div>
+        <div class="logo-text">Redwood</div>
+        <div class="logo-sub">Furniture SA</div>
+      </div>
+    </a>
+    <a href="https://wa.me/27000000000?text=Hi%2C%20I%20want%20to%20browse%20your%20furniture" class="header-wa" target="_blank">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.122 1.527 5.855L.057 23.926c-.066.254.003.525.185.706.138.138.322.21.512.21.065 0 .13-.009.194-.028l6.193-1.628C8.644 24.038 10.298 24.5 12 24.5c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.548 0-3.05-.384-4.36-1.112l-.31-.177-3.245.854.86-3.166-.198-.316C3.908 16.812 3.5 14.46 3.5 12 3.5 6.71 7.71 2.5 12 2.5S20.5 6.71 20.5 12 16.29 22 12 22z" fill-rule="evenodd" clip-rule="evenodd"/></svg>
+      WhatsApp Us
+    </a>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-badge">🔥 Limited Stock — Order Today</div>
+    <h1>Quality Furniture.<br/><span>Prices That</span> Make Sense.</h1>
+    <p class="hero-sub">Delivered same-day across Gauteng. No deposit. No risk. Pay when it arrives.</p>
+    <div class="hero-price">
+      <div class="from">L-Shape Couches Starting From</div>
+      <div class="amount">R<span>1,650</span></div>
+      <div class="note">✅ Cash on Delivery · Same-Day Available</div>
+    </div>
+    <div class="hero-ctas">
+      <a href="https://wa.me/27000000000?text=Hi%2C%20I%20want%20to%20order%20furniture%20from%20Redwood%20Furniture%20SA" target="_blank" class="btn-wa">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.122 1.527 5.855L.057 23.926c-.066.254.003.525.185.706.138.138.322.21.512.21.065 0 .13-.009.194-.028l6.193-1.628C8.644 24.038 10.298 24.5 12 24.5c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.548 0-3.05-.384-4.36-1.112l-.31-.177-3.245.854.86-3.166-.198-.316C3.908 16.812 3.5 14.46 3.5 12 3.5 6.71 7.71 2.5 12 2.5S20.5 6.71 20.5 12 16.29 22 12 22z" fill-rule="evenodd" clip-rule="evenodd"/></svg>
+        Order on WhatsApp
+      </a>
+      <a href="#categories" class="btn-secondary">
+        👀 View All Deals ↓
+      </a>
+    </div>
+    <div class="hero-trust">
+      <div class="trust-item"><div class="dot"></div>Brakpan Based</div>
+      <div class="trust-item"><div class="dot"></div>Nationwide Delivery</div>
+      <div class="trust-item"><div class="dot"></div>500+ Happy Customers</div>
+    </div>
+  </section>
+
+  <!-- Social Proof Scroll Bar -->
+  <div class="proof-bar">
+    <div class="proof-scroll">
+      <div class="proof-item"><span class="icon">🛋️</span> Sipho from Soweto just ordered a couch</div>
+      <div class="proof-sep">·</div>
+      <div class="proof-item"><span class="icon">🚚</span> Delivery confirmed to Sandton today</div>
+      <div class="proof-sep">·</div>
+      <div class="proof-item"><span class="icon">⭐</span> "Best quality for the price!" – Nomsa, Midrand</div>
+      <div class="proof-sep">·</div>
+      <div class="proof-item"><span class="icon">✅</span> Cash on Delivery accepted</div>
+      <div class="proof-sep">·</div>
+      <div class="proof-item"><span class="icon">🏠</span> Thabo in Germiston received his dining set</div>
+      <div class="proof-sep">·</div>
+      <div class="proof-item"><span class="icon">🛋️</span> Sipho from Soweto just ordered a couch</div>
+      <div class="proof-sep">·</div>
+      <div class="proof-item"><span class="icon">🚚</span> Delivery confirmed to Sandton today</div>
+      <div class="proof-sep">·</div>
+      <div class="proof-item"><span class="icon">⭐</span> "Best quality for the price!" – Nomsa, Midrand</div>
+      <div class="proof-sep">·</div>
+      <div class="proof-item"><span class="icon">✅</span> Cash on Delivery accepted</div>
+      <div class="proof-sep">·</div>
+      <div class="proof-item"><span class="icon">🏠</span> Thabo in Germiston received his dining set</div>
+    </div>
+  </div>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="section-label">What Customers Say</div>
+    <div class="section-title">Real People.<br/><span>Real Results.</span></div>
+
+    <div class="wa-bubble">
+      <div class="wa-meta">
+        <div class="wa-avatar" style="background:#E53935;">N</div>
+        <div>
+          <div class="wa-name">Nomsa M.</div>
+          <div class="wa-loc">📍 Midrand, Gauteng</div>
+        </div>
+      </div>
+      <div class="stars">★★★★★</div>
+      <div class="wa-text">Guys I'm so happy! Ordered my L-shape couch on WhatsApp in the morning and it was delivered by 3pm the SAME DAY 😭❤️ Quality is amazing. Cash on delivery so no stress. Will order again!</div>
+      <div class="wa-time">✓✓ Delivered · Yesterday 15:04</div>
+    </div>
+
+    <div class="wa-bubble">
+      <div class="wa-meta">
+        <div class="wa-avatar" style="background:#1565C0;">T</div>
+        <div>
+          <div class="wa-name">Thabo K.</div>
+          <div class="wa-loc">📍 Germiston, Gauteng</div>
+        </div>
+      </div>
+      <div class="stars">★★★★★</div>
+      <div class="wa-text">Bought the 6-seater dining set. Price was R2800 and the quality is 10/10. My wife thought I spent way more 😂 Delivery guys were professional and helped set it up. Highly recommend Redwood!</div>
+      <div class="wa-time">✓✓ Delivered · 2 days ago 11:30</div>
+    </div>
+
+    <div class="wa-bubble">
+      <div class="wa-meta">
+        <div class="wa-avatar" style="background:#2E7D32;">L</div>
+        <div>
+          <div class="wa-name">Lerato S.</div>
+          <div class="wa-loc">📍 Fourways, Gauteng</div>
+        </div>
+      </div>
+      <div class="stars">★★★★★</div>
+      <div class="wa-text">I was nervous to order online but the Cash on Delivery option made it easy. Got my queen bed and mattress. Everything is solid and looks beautiful. Thank you Redwood Furniture 🙏</div>
+      <div class="wa-time">✓✓ Delivered · 4 days ago 09:15</div>
+    </div>
+  </section>
+
+  <!-- Delivery Proof -->
+  <section class="delivery-proof">
+    <div class="section-label">Delivery Proof</div>
+    <div class="section-title">We Deliver.<br/><span>On Time. Every Time.</span></div>
+
+    <div class="delivery-item">
+      <div class="delivery-icon">📦</div>
+      <div class="delivery-text">
+        <div class="head">Order Confirmed – Sandton</div>
+        <div class="body">L-shape couch · Charcoal Grey · 2-seater + chaise</div>
+        <div class="time">✅ Delivered 2hrs after order · 13:22 today</div>
+      </div>
+    </div>
+    <div class="delivery-item">
+      <div class="delivery-icon">🛏️</div>
+      <div class="delivery-text">
+        <div class="head">Order Confirmed – Soweto</div>
+        <div class="body">Queen bed frame + mattress combo · White</div>
+        <div class="time">✅ Delivered same day · 16:45 yesterday</div>
+      </div>
+    </div>
+    <div class="delivery-item">
+      <div class="delivery-icon">🍽️</div>
+      <div class="delivery-text">
+        <div class="head">Order Confirmed – Centurion</div>
+        <div class="body">6-seater dining set · Dark Walnut · with cushioned chairs</div>
+        <div class="time">✅ Delivered next morning · 09:30</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="categories" id="categories">
+    <div class="section-label">Shop by Category</div>
+    <div class="section-title">Find Your<br/><span>Perfect Piece</span></div>
+    <div class="cat-grid">
+      <a href="#" class="cat-card" onclick="showPage('productpage'); return false;">
+        <div class="cat-img sofa" style="font-size:50px;">🛋️</div>
+        <div class="cat-body">
+          <div class="cat-name">L-Shape Couches</div>
+          <div class="cat-from">Starting from</div>
+          <div class="cat-price">R1,650</div>
+          <div class="cat-cta">Shop Now →</div>
+        </div>
+      </a>
+      <a href="#" class="cat-card" onclick="showPage('productpage'); return false;">
+        <div class="cat-img bed" style="font-size:50px;">🛏️</div>
+        <div class="cat-body">
+          <div class="cat-name">Beds & Mattresses</div>
+          <div class="cat-from">Starting from</div>
+          <div class="cat-price">R1,999</div>
+          <div class="cat-cta">Shop Now →</div>
+        </div>
+      </a>
+      <a href="#" class="cat-card">
+        <div class="cat-img dining" style="font-size:50px;">🍽️</div>
+        <div class="cat-body">
+          <div class="cat-name">Dining Sets</div>
+          <div class="cat-from">Starting from</div>
+          <div class="cat-price">R2,200</div>
+          <div class="cat-cta">Shop Now →</div>
+        </div>
+      </a>
+      <a href="#" class="cat-card">
+        <div class="cat-img kitchen" style="font-size:50px;">🍳</div>
+        <div class="cat-body">
+          <div class="cat-name">Kitchen Units</div>
+          <div class="cat-from">Starting from</div>
+          <div class="cat-price">R1,800</div>
+          <div class="cat-cta">Shop Now →</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="products">
+    <div class="section-label">🔥 Hot Deals</div>
+    <div class="section-title">Our Best<br/><span>Sellers</span></div>
+    <div class="prod-grid">
+
+      <div class="prod-card">
+        <div class="prod-badge">BEST SELLER</div>
+        <div class="prod-img" style="background:linear-gradient(135deg,#3D2B1F,#7A4A2A);">🛋️</div>
+        <div class="prod-body">
+          <div class="prod-name">L-Shape Couch – Grey Fabric</div>
+          <div class="prod-benefit">Fits any lounge. Durable foam. Easy clean.</div>
+          <div class="prod-price">R1,650</div>
+          <div class="prod-old">Was R2,200</div>
+          <a href="https://wa.me/27000000000?text=Hi%2C%20I%20want%20the%20L-shape%20couch%20Grey%20R1650" target="_blank" class="btn-prod-wa">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.122 1.527 5.855L.057 23.926c-.066.254.003.525.185.706.138.138.322.21.512.21.065 0 .13-.009.194-.028l6.193-1.628C8.644 24.038 10.298 24.5 12 24.5c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.548 0-3.05-.384-4.36-1.112l-.31-.177-3.245.854.86-3.166-.198-.316C3.908 16.812 3.5 14.46 3.5 12 3.5 6.71 7.71 2.5 12 2.5S20.5 6.71 20.5 12 16.29 22 12 22z"/></svg>
+            Order on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="prod-card">
+        <div class="prod-badge hot">HOT</div>
+        <div class="prod-img" style="background:linear-gradient(135deg,#1A2A45,#2B3D6B);">🛏️</div>
+        <div class="prod-body">
+          <div class="prod-name">Queen Bed + Mattress Combo</div>
+          <div class="prod-benefit">Solid frame. Ortho mattress included.</div>
+          <div class="prod-price">R2,499</div>
+          <div class="prod-old">Was R3,200</div>
+          <a href="https://wa.me/27000000000?text=Hi%2C%20I%20want%20the%20Queen%20Bed%20%2B%20Mattress%20Combo%20R2499" target="_blank" class="btn-prod-wa">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.122 1.527 5.855L.057 23.926c-.066.254.003.525.185.706.138.138.322.21.512.21.065 0 .13-.009.194-.028l6.193-1.628C8.644 24.038 10.298 24.5 12 24.5c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.548 0-3.05-.384-4.36-1.112l-.31-.177-3.245.854.86-3.166-.198-.316C3.908 16.812 3.5 14.46 3.5 12 3.5 6.71 7.71 2.5 12 2.5S20.5 6.71 20.5 12 16.29 22 12 22z"/></svg>
+            Order on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="prod-card">
+        <div class="prod-badge">SALE</div>
+        <div class="prod-img" style="background:linear-gradient(135deg,#3B2B1A,#6B4C2A);">🍽️</div>
+        <div class="prod-body">
+          <div class="prod-name">6-Seater Dining Set</div>
+          <div class="prod-benefit">Table + 6 chairs. Dark walnut finish.</div>
+          <div class="prod-price">R2,800</div>
+          <div class="prod-old">Was R3,500</div>
+          <a href="https://wa.me/27000000000?text=Hi%2C%20I%20want%20the%206-seater%20Dining%20Set%20R2800" target="_blank" class="btn-prod-wa">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.122 1.527 5.855L.057 23.926c-.066.254.003.525.185.706.138.138.322.21.512.21.065 0 .13-.009.194-.028l6.193-1.628C8.644 24.038 10.298 24.5 12 24.5c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.548 0-3.05-.384-4.36-1.112l-.31-.177-3.245.854.86-3.166-.198-.316C3.908 16.812 3.5 14.46 3.5 12 3.5 6.71 7.71 2.5 12 2.5S20.5 6.71 20.5 12 16.29 22 12 22z"/></svg>
+            Order on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="prod-card">
+        <div class="prod-img" style="background:linear-gradient(135deg,#1A3B2B,#2E6B4A);">🍳</div>
+        <div class="prod-body">
+          <div class="prod-name">Freestanding Kitchen Unit</div>
+          <div class="prod-benefit">Storage + countertop. Easy assemble.</div>
+          <div class="prod-price">R1,850</div>
+          <div class="prod-old">Was R2,400</div>
+          <a href="https://wa.me/27000000000?text=Hi%2C%20I%20want%20the%20Kitchen%20Unit%20R1850" target="_blank" class="btn-prod-wa">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.122 1.527 5.855L.057 23.926c-.066.254.003.525.185.706.138.138.322.21.512.21.065 0 .13-.009.194-.028l6.193-1.628C8.644 24.038 10.298 24.5 12 24.5c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.548 0-3.05-.384-4.36-1.112l-.31-.177-3.245.854.86-3.166-.198-.316C3.908 16.812 3.5 14.46 3.5 12 3.5 6.71 7.71 2.5 12 2.5S20.5 6.71 20.5 12 16.29 22 12 22z"/></svg>
+            Order on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="prod-card">
+        <div class="prod-badge">NEW IN</div>
+        <div class="prod-img" style="background:linear-gradient(135deg,#2D1B4A,#4A2D7A);">🛋️</div>
+        <div class="prod-body">
+          <div class="prod-name">L-Shape – Velvet Maroon</div>
+          <div class="prod-benefit">Premium velvet. Corner design. Luxury look.</div>
+          <div class="prod-price">R2,100</div>
+          <div class="prod-old">Was R2,800</div>
+          <a href="https://wa.me/27000000000?text=Hi%2C%20I%20want%20the%20L-shape%20Velvet%20Maroon%20R2100" target="_blank" class="btn-prod-wa">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.122 1.527 5.855L.057 23.926c-.066.254.003.525.185.706.138.138.322.21.512.21.065 0 .13-.009.194-.028l6.193-1.628C8.644 24.038 10.298 24.5 12 24.5c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.548 0-3.05-.384-4.36-1.112l-.31-.177-3.245.854.86-3.166-.198-.316C3.908 16.812 3.5 14.46 3.5 12 3.5 6.71 7.71 2.5 12 2.5S20.5 6.71 20.5 12 16.29 22 12 22z"/></svg>
+            Order on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="prod-card">
+        <div class="prod-img" style="background:linear-gradient(135deg,#2B1A45,#4A2B7A);">🛏️</div>
+        <div class="prod-body">
+          <div class="prod-name">Double Bed – White Panel</div>
+          <div class="prod-benefit">Sleek headboard. Solid base. Easy build.</div>
+          <div class="prod-price">R1,999</div>
+          <div class="prod-old">Was R2,600</div>
+          <a href="https://wa.me/27000000000?text=Hi%2C%20I%20want%20the%20Double%20Bed%20White%20Panel%20R1999" target="_blank" class="btn-prod-wa">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.122 1.527 5.855L.057 23.926c-.066.254.003.525.185.706.138.138.322.21.512.21.065 0 .13-.009.194-.028l6.193-1.628C8.644 24.038 10.298 24.5 12 24.5c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.548 0-3.05-.384-4.36-1.112l-.31-.177-3.245.854.86-3.166-.198-.316C3.908 16.812 3.5 14.46 3.5 12 3.5 6.71 7.71 2.5 12 2.5S20.5 6.71 20.5 12 16.29 22 12 22z"/></svg>
+            Order on WhatsApp
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why-us">
+    <div class="section-label">Why Redwood?</div>
+    <div class="section-title">We Make It<br/>Easy For <span>You</span></div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">💵</div>
+        <div class="why-title">Cash on Delivery</div>
+        <div class="why-desc">Pay when your furniture arrives. No upfront risk.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">⚡</div>
+        <div class="why-title">Same-Day Delivery</div>
+        <div class="why-desc">Order before noon, get it today across Gauteng.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">💰</div>
+        <div class="why-title">Unbeatable Prices</div>
+        <div class="why-desc">Factory prices. No middleman. Real savings.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📍</div>
+        <div class="why-title">Local Supplier</div>
+        <div class="why-desc">Based in Brakpan. Serving all of Gauteng.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🛡️</div>
+        <div class="why-title">Quality Checked</div>
+        <div class="why-desc">Every piece inspected before delivery.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">💬</div>
+        <div class="why-title">WhatsApp Support</div>
+        <div class="why-desc">Real people. Fast replies. 7 days a week.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how">
+    <div class="section-label">Simple Process</div>
+    <div class="section-title">Order in<br/><span>4 Easy Steps</span></div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-line"></div>
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div class="step-title">👆 Choose Your Furniture</div>
+          <div class="step-desc">Browse our products. Pick what you love. Check the price.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-line"></div>
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div class="step-title">📱 Message Us on WhatsApp</div>
+          <div class="step-desc">Send us the product name and your delivery address. That's it.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-line"></div>
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <div class="step-title">✅ We Confirm & Prepare</div>
+          <div class="step-desc">We confirm the order, package it and dispatch it to you fast.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <div class="step-title">🚚 Delivered to Your Door</div>
+          <div class="step-desc">Pay cash when it arrives. No deposit. No stress. Enjoy!</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Urgency -->
+  <section class="urgency">
+    <div class="section-label">⏰ Don't Wait</div>
+    <div class="section-title">Stock Is<br/>Going <span style="color:var(--gold);">Fast!</span></div>
+    <div class="urgency-cards">
+      <div class="urgency-card">
+        <div class="urgency-num">7</div>
+        <div class="urgency-label">L-Shape Couches Left</div>
+      </div>
+      <div class="urgency-card">
+        <div class="urgency-num">3</div>
+        <div class="urgency-label">Delivery Slots Today</div>
+      </div>
+      <div class="urgency-card">
+        <div class="urgency-num">12</div>
+        <div class="urgency-label">Orders This Week</div>
+      </div>
+      <div class="urgency-card">
+        <div class="urgency-num">4</div>
+        <div class="urgency-label">Dining Sets Left</div>
+      </div>
+    </div>
+    <div>
+      <div style="font-weight:800;font-size:14px;margin-bottom:6px;">Today's delivery slots filling up:</div>
+      <div class="urgency-bar-wrap"><div class="urgency-bar"></div></div>
+      <div class="urgency-bar-text">72% full — only 3 slots remaining for today</div>
+    </div>
+    <a href="https://wa.me/27000000000?text=Hi%2C%20I%20want%20to%20order%20furniture%20-%20do%20you%20still%20have%20stock%3F" target="_blank" class="btn-wa" style="max-width:340px;margin:0 auto;">
+      <svg viewBox="0 0 24 24" fill="currentColor" style="width:22px;height:22px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.122 1.527 5.855L.057 23.926c-.066.254.003.525.185.706.138.138.322.21.512.21.065 0 .13-.009.194-.028l6.193-1.628C8.644 24.038 10.298 24.5 12 24.5c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.548 0-3.05-.384-4.36-1.112l-.31-.177-3.245.854.86-3.166-.198-.316C3.908 16.812 3.5 14.46 3.5 12 3.5 6.71 7.71 2.5 12 2.5S20.5 6.71 20.5 12 16.29 22 12 22z"/></svg>
+      Claim Your Slot Now
+    </a>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="final-cta">
+    <div class="section-label">Ready to Order?</div>
+    <div class="section-title">Your New<br/><span>Furniture</span> Awaits</div>
+    <p class="final-sub">Message us right now. We'll help you pick the right piece and arrange same-day delivery.</p>
+    <a href="https://wa.me/27000000000?text=Hi%20Redwood%20Furniture!%20I%20want%20to%20order%20furniture.%20Can%20you%20help%20me%3F" target="_blank" class="btn-wa" style="max-width:340px;margin:0 auto;font-size:18px;padding:20px 24px;">
+      <svg viewBox="0 0 24 24" fill="currentColor" style="width:24px;height:24px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.122 1.527 5.855L.057 23.926c-.066.254.003.525.185.706.138.138.322.21.512.21.065 0 .13-.009.194-.028l6.193-1.628C8.644 24.038 10.298 24.5 12 24.5c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.548 0-3.05-.384-4.36-1.112l-.31-.177-3.245.854.86-3.166-.198-.316C3.908 16.812 3.5 14.46 3.5 12 3.5 6.71 7.71 2.5 12 2.5S20.5 6.71 20.5 12 16.29 22 12 22z"/></svg>
+      WhatsApp Us Now — It's Free
+    </a>
+    <div class="cod-badge">
+      <span class="icon">💵</span>
+      Cash on Delivery — Pay When It Arrives
+    </div>
+    <div style="margin-top:20px;display:flex;justify-content:center;gap:24px;flex-wrap:wrap;">
+      <div class="trust-item" style="font-size:12px;"><div class="dot" style="background:var(--gold);width:8px;height:8px;"></div> No upfront payment</div>
+      <div class="trust-item" style="font-size:12px;"><div class="dot" style="background:var(--gold);width:8px;height:8px;"></div> Same-day possible</div>
+      <div class="trust-item" style="font-size:12px;"><div class="dot" style="background:var(--gold);width:8px;height:8px;"></div> 500+ happy customers</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="brand">Redwood Furniture SA</div>
+    <div class="location">📍 Brakpan, East Rand, Gauteng · Nationwide Delivery</div>
+    <div class="links">
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="https://wa.me/27000000000" target="_blank">WhatsApp</a>
+      <a href="#">About</a>
+    </div>
+    <div class="copy">© 2025 Redwood Furniture SA. All rights reserved. · Cash on Delivery · Same-Day Gauteng</div>
+  </footer>
+
+</div><!-- end homepage -->
+
+
+<!-- ===== PRODUCT PAGE ===== -->
+<div id="productpage" class="page">
+
+  <!-- Header (same) -->
+  <div class="top-banner">
+    🚚 <span>FREE DELIVERY</span> across Gauteng · Cash on Delivery Available
+  </div>
+  <header>
+    <a href="#" class="logo" onclick="showPage('homepage'); return false;">
+      <div class="logo-icon">R</div>
+      <div>
+        <div class="logo-text">Redwood</div>
+        <div class="logo-sub">Furniture SA</div>
+      </div>
+    </a>
+    <a href="https://wa.me/27000000000?text=Hi%2C%20I%20want%20the%20L-shape%20couch%20R1650" class="header-wa" target="_blank">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.122 1.527 5.855L.057 23.926c-.066.254.003.525.185.706.138.138.322.21.512.21.065 0 .13-.009.194-.028l6.193-1.628C8.644 24.038 10.298 24.5 12 24.5c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.548 0-3.05-.384-4.36-1.112l-.31-.177-3.245.854.86-3.166-.198-.316C3.908 16.812 3.5 14.46 3.5 12 3.5 6.71 7.71 2.5 12 2.5S20.5 6.71 20.5 12 16.29 22 12 22z"/></svg>
+      Order Now
+    </a>
+  </header>
+
+  <!-- Back Button -->
+  <a class="back-btn" href="#" onclick="showPage('homepage'); return false;">
+    ← Back to Products
+  </a>
+
+  <!-- Product Gallery -->
+  <div class="prod-gallery">
+    🛋️
+    <div class="prod-gallery-badge">🔥 Best Seller</div>
+  </div>
+
+  <!-- Product Details -->
+  <div class="prod-detail">
+    <div class="prod-detail-name">L-Shape Couch – Grey Fabric Corner</div>
+    <div class="prod-detail-price">R1,650</div>
+    <div class="prod-detail-old">Was R2,200 · You save R550!</div>
+
+    <!-- Scarcity -->
+    <div class="prod-scarcity">
+      ⚠️ Only 7 left in stock. 3 people viewing this now.
+    </div>
+
+    <!-- Benefits -->
+    <div class="prod-benefits">
+      <h3>Why You'll Love This Couch</h3>
+      <div class="benefit-row">
+        <span class="benefit-check">✅</span>
+        <span class="benefit-text">Extra-thick foam cushions — comfortable for the whole family every day</span>
+      </div>
+      <div class="benefit-row">
+        <span class="benefit-check">✅</span>
+        <span class="benefit-text">Durable fabric that's easy to clean — great for kids and pets</span>
+      </div>
+      <div class="benefit-row">
+        <span class="benefit-check">✅</span>
+        <span class="benefit-text">Corner L-shape design — fits perfectly in any size lounge</span>
+      </div>
+      <div class="benefit-row">
+        <span class="benefit-check">✅</span>
+        <span class="benefit-text">Modern grey colour — matches any décor style</span>
+      </div>
+      <div class="benefit-row">
+        <span class="benefit-check">✅</span>
+        <span class="benefit-text">Solid wood frame — built to last for years</span>
+      </div>
+    </div>
+
+    <!-- Specs -->
+    <div class="prod-specs">
+      <h3>📐 Size & Details</h3>
+      <div class="spec-row">
+        <span class="spec-label">Width</span>
+        <span class="spec-val">260cm × 160cm</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Seat Height</span>
+        <span class="spec-val">45cm</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Colour</span>
+        <span class="spec-val">Charcoal Grey</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Material</span>
+        <span class="spec-val">Fabric / Foam / Wood Frame</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Assembly</span>
+        <span class="spec-val">Minimal – delivered ready</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Available Colours</span>
+        <span class="spec-val">Grey, Cream, Black, Brown</span>
+      </div>
+    </div>
+
+    <!-- Delivery -->
+    <div class="prod-delivery">
+      <div class="icon">🚚</div>
+      <div class="text">
+        <div class="head">Same-Day Delivery Available</div>
+        <div class="body">Order before 12pm and receive it today in Gauteng. Free delivery. Pay cash on arrival.</div>
+      </div>
+    </div>
+
+    <!-- Main CTA -->
+    <a href="https://wa.me/27000000000?text=Hi%2C%20I%20want%20to%20order%20the%20L-shape%20Couch%20Grey%20at%20R1650.%20Please%20send%20me%20more%20info." target="_blank" class="prod-cta-big">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.122 1.527 5.855L.057 23.926c-.066.254.003.525.185.706.138.138.322.21.512.21.065 0 .13-.009.194-.028l6.193-1.628C8.644 24.038 10.298 24.5 12 24.5c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.548 0-3.05-.384-4.36-1.112l-.31-.177-3.245.854.86-3.166-.198-.316C3.908 16.812 3.5 14.46 3.5 12 3.5 6.71 7.71 2.5 12 2.5S20.5 6.71 20.5 12 16.29 22 12 22z"/></svg>
+      Order via WhatsApp — R1,650
+    </a>
+    <div class="prod-cod-note">💵 <span>Cash on Delivery.</span> Pay when it arrives. No upfront payment needed.</div>
+
+    <!-- Trust Indicators -->
+    <div class="trust-row">
+      <div class="trust-col">
+        <div class="t-icon">🛡️</div>
+        <div class="t-text">Quality Checked</div>
+      </div>
+      <div class="trust-col">
+        <div class="t-icon">⚡</div>
+        <div class="t-text">Fast Delivery</div>
+      </div>
+      <div class="trust-col">
+        <div class="t-icon">💬</div>
+        <div class="t-text">WhatsApp Support</div>
+      </div>
+      <div class="trust-col">
+        <div class="t-icon">⭐</div>
+        <div class="t-text">500+ Reviews</div>
+      </div>
+    </div>
+
+  </div><!-- end prod-detail -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="brand">Redwood Furniture SA</div>
+    <div class="location">📍 Brakpan, East Rand, Gauteng</div>
+    <div class="copy">© 2025 Redwood Furniture SA · Cash on Delivery</div>
+  </footer>
+
+</div><!-- end productpage -->
+
+
+<!-- ===== FLOATING WHATSAPP ===== -->
+<div class="float-wa-label" id="waLabel">💬 Chat with us!</div>
+<a href="https://wa.me/27000000000?text=Hi%20Redwood%20Furniture!%20I%20want%20to%20order%20furniture." target="_blank" class="float-wa" id="floatWa">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.122 1.527 5.855L.057 23.926c-.066.254.003.525.185.706.138.138.322.21.512.21.065 0 .13-.009.194-.028l6.193-1.628C8.644 24.038 10.298 24.5 12 24.5c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.548 0-3.05-.384-4.36-1.112l-.31-.177-3.245.854.86-3.166-.198-.316C3.908 16.812 3.5 14.46 3.5 12 3.5 6.71 7.71 2.5 12 2.5S20.5 6.71 20.5 12 16.29 22 12 22z"/></svg>
+</a>
+
+<!-- ===== STICKY BOTTOM BAR ===== -->
+<div class="sticky-bar">
+  <a href="tel:+27000000000" class="sticky-call">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.55 1.18 2 2 0 012.54 0H5.5a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/></svg>
+    Call
+  </a>
+  <a href="https://wa.me/27000000000?text=Hi%20Redwood%20Furniture!%20I%20want%20to%20order%20furniture%20-%20Cash%20on%20Delivery%20please." target="_blank" class="sticky-wa">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.122 1.527 5.855L.057 23.926c-.066.254.003.525.185.706.138.138.322.21.512.21.065 0 .13-.009.194-.028l6.193-1.628C8.644 24.038 10.298 24.5 12 24.5c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.548 0-3.05-.384-4.36-1.112l-.31-.177-3.245.854.86-3.166-.198-.316C3.908 16.812 3.5 14.46 3.5 12 3.5 6.71 7.71 2.5 12 2.5S20.5 6.71 20.5 12 16.29 22 12 22z"/></svg>
+    Order on WhatsApp · Cash on Delivery
+  </a>
+</div>
+
+<script>
+  // Page navigation
+  function showPage(pageId) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById(pageId).classList.add('active');
+    window.scrollTo(0, 0);
+  }
+
+  // Hide floating label after 5 seconds
+  setTimeout(() => {
+    const label = document.getElementById('waLabel');
+    if (label) {
+      label.style.transition = 'opacity 0.5s';
+      label.style.opacity = '0';
+      setTimeout(() => label.remove(), 500);
+    }
+  }, 5000);
+
+  // Scroll reveal animation
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.cat-card, .prod-card, .wa-bubble, .why-card, .step, .delivery-item').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>
